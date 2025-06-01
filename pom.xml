@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.ujcms</groupId>
-    <artifactId>ujcms</artifactId>
+    <artifactId>news</artifactId>
     <version>9.8.2</version>
     <packaging>${project.packaging}</packaging>
 
