@@ -1,6 +1,6 @@
 # News
 
-News 是一款基于 Java 的开源企业级网站内容管理系统（Java CMS），采用 SpringBoot、MyBatis、Spring Security、Vue3、Vite、ElementPlus 等前沿技术开发，支持 `无头 CMS` 架构。系统提供 `模板 + 标签` 和 `Vue (React) + API` 两种开发模式，适用于传统模板渲染和现代化前后端分离场景，为网站的建设、管理与维护提供高效、灵活、可靠的解决方案。
+News 是一款基于 Java 的开源新闻网站内容管理系统（Java CMS），采用 SpringBoot、MyBatis、Spring Security、Vue3、Vite、ElementPlus 等前沿技术开发，支持 `无头 CMS` 架构。系统提供 `模板 + 标签` 和 `Vue (React) + API` 两种开发模式，适用于传统模板渲染和现代化前后端分离场景，为网站的建设、管理与维护提供高效、灵活、可靠的解决方案。
 
 ## 环境要求
 
