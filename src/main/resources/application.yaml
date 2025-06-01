@@ -178,11 +178,11 @@ logging.level.org.springframework.boot.web.embedded.tomcat.TomcatWebServer: INFO
 logging.level.com.ujcms.cms.Application: INFO
 # 关闭springboot日志图标
 spring.main.banner-mode: off
-# 默认关闭 SpringDoc
+# SpringDoc配置
 # 文档JSON地址：/v3/api-docs
-springdoc.api-docs.enabled: false
+springdoc.api-docs.enabled: true
 # 文档HTML地址：/swagger-ui.html
-springdoc.swagger-ui.enabled: false
+springdoc.swagger-ui.enabled: true
 
 # MyBatis是否开启二级缓存。默认：true
 #mybatis.configuration.cache-enabled: false

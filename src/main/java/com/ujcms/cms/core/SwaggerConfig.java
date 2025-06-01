@@ -21,7 +21,7 @@ public class SwaggerConfig {
      */
     @Bean
     public OpenAPI openApi(@Value("${ujcms.version}") String version) {
-        return new OpenAPI().info(new Info().title("UJCMS API").description("UJCMS 接口文档").version(version));
+        return new OpenAPI().info(new Info().title("NewsPub API").description("NewsPub 接口文档").version(version));
     }
 
     /**
@@ -32,7 +32,7 @@ public class SwaggerConfig {
     @Bean
     public GroupedOpenApi frontendGroup(@Value("${ujcms.version}") String version) {
         return GroupedOpenApi.builder().group("frontend").displayName("前台API")
-                .addOpenApiCustomiser(openApi -> openApi.info(new Info().title("UJCMS 前台 API").version(version)))
+                .addOpenApiCustomiser(openApi -> openApi.info(new Info().title("NewsPub 前台 API").version(version)))
                 .packagesToScan("com.ujcms.cms.core.web.api", "com.ujcms.cms.ext.web.api")
                 .pathsToMatch("/api/**")
                 .build();
