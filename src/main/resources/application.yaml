@@ -81,22 +81,22 @@ ujcms.databaseBinPath:
 #ujcms.databaseBinPath:
 
 # 达梦数据库（不可直接创建模式；应该创建用户，达梦会自动创建同名模式；用户要赋予 RESOURCE 角色；使用新建的用户连接数据库）
-#spring.datasource.url: jdbc:dm://192.168.0.240:5236/UJCMS
+#spring.datasource.url: jdbc:dm://192.168.0.240:5236/news
 ## 达梦的用户名需与 spring.datasource.url 中的数据库名一致
-#spring.datasource.username: UJCMS
+#spring.datasource.username: news
 #spring.datasource.password: pass@0000
 #spring.datasource.driver-class-name: dm.jdbc.driver.DmDriver
-#ujcms.data-sql-platform: dm
+#news.data-sql-platform: dm
 ## 达梦必须指定工作流的 schema 名称，需与 spring.datasource.url 中的数据库名一致
-#flowable.database-schema: UJCMS
+#flowable.database-schema: news
 ## 达梦必须指定 liquibase 的 schema 名称，需与 spring.datasource.url 中的数据库名一致
-#spring.liquibase.liquibase-schema: UJCMS
+#spring.liquibase.liquibase-schema: news
 
 # 集群环境下，可以设置雪花算法主键的数据中心ID和工作机器ID。不设置时，会自动根据网卡mac地址和pid(进程ID)计算出一个相对随机的数值，一般情况下不会冲突。
 # 雪花算法主键：数据中心ID。范围 0-31
-#ujcms.datacenterId:
+#news.datacenterId:
 # 雪花算法主键：工作机器ID。范围 0-31
-#ujcms.workerId:
+#news.workerId:
 
 # 集群环境需要使用jdbc。默认：memory
 #spring.quartz.job-store-type: jdbc
@@ -125,7 +125,7 @@ spring.liquibase.enabled: true
 # https://www.flowable.com/open-source/docs/bpmn/ch05a-Spring-Boot#flowable-application-properties
 #flowable.database-schema-update: none
 # 是否执行初始化脚本。默认：true
-#ujcms.data-sql-enabled: false
+#news.data-sql-enabled: false
 
 # 数据库连接生命时长（毫秒）。默认值：1800000 (30 分钟)。
 # 官方强烈建议设置该值，该值必须比数据库连接过期时间小 30 秒以上。
@@ -137,7 +137,7 @@ spring.liquibase.enabled: true
 #spring.datasource.hikari.maximum-pool-size: 10
 
 # 使用JNDI方式获取数据库连接，需先配置好JNDI
-#spring.datasource.jndi-name: java:comp/env/jdbc/ujcms
+#spring.datasource.jndi-name: java:comp/env/jdbc/news
 # 防止在 WebSphere 下出现 UnsupportedOperationException 错误。包括宝兰德等应用服务器也必须加上这项配置
 spring.jta.enabled: false
 
@@ -171,8 +171,8 @@ server.error.include-stacktrace: ALWAYS
 # 日志级别为ERROR
 logging.level.root: ERROR
 # 显示 MyBatis SQL 日志
-#logging.level.com.ujcms.cms.core.mapper: DEBUG
-#logging.level.com.ujcms.cms.ext.mapper: DEBUG
+#logging.level.com.news.cms.core.mapper: DEBUG
+#logging.level.com.news.cms.ext.mapper: DEBUG
 # 显示tomcat启动信息
 logging.level.org.springframework.boot.web.embedded.tomcat.TomcatWebServer: INFO
 logging.level.com.ujcms.cms.Application: INFO
@@ -229,7 +229,7 @@ spring.task.execution.pool.queue-capacity: 2048
 # 模板目录下通常包含img、css、js等文件，需确保能够被浏览器访问到。
 # 结尾必须带'/'，否则 error 页面找不到模板。
 spring.freemarker.template-loader-path: /templates/
-#spring.freemarker.template-loader-path: file:d:/ujcms/templates/
+#spring.freemarker.template-loader-path: file:d:/news/templates/
 #spring.freemarker.template-loader-path: file:/my/dir/templates/
 
 # 必须指定后缀，否则 error 页面找不到模板。后缀使用html，方便其它编辑器识别文件格式。
