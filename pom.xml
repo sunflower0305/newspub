@@ -9,11 +9,11 @@
     <version>9.8.2</version>
     <packaging>${project.packaging}</packaging>
 
-    <name>UJCMS</name>
+    <name>News</name>
     <description>
-        UJCMS 是基于 Java 的 CMS 网站内容系统。使用 SpringBoot、MyBatis、Vite、Vue3、ElementPlus、TailwindCSS 等技术开发。
+        News 是基于 Java 的 CMS 网站内容系统。使用 SpringBoot、MyBatis、Vite、Vue3、ElementPlus、TailwindCSS 等技术开发。
     </description>
-    <url>https://www.ujcms.com</url>
+    <url>http://47.111.110.86/</url>
     <inceptionYear>2021-2025</inceptionYear>
 
     <parent>
