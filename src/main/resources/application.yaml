@@ -11,7 +11,7 @@ spring.datasource.url: jdbc:mysql://localhost:3306/news?serverTimezone=Asia/Shan
 # 数据库用户名（注意：所有配置名的冒号后必须保留一个英文空格）
 spring.datasource.username: root
 # 数据库密码（注意：所有配置名的冒号后必须保留一个英文空格）
-spring.datasource.password: 
+spring.datasource.password:
 # 数据库驱动。常用数据库（如MySQL、PostegreSQL、Oracle）可通过jdbc url自动判断，不用指定。无法自动判断时（如国产数据库），需要手动指定。
 #spring.datasource.driver-class-name: com.mysql.cj.jdbc.Driver
 # 执行初始化脚本的数据库类型。
@@ -142,7 +142,7 @@ spring.liquibase.enabled: true
 spring.jta.enabled: false
 
 # 服务端口。默认8080端口。
-#server.port: 80
+server.port: 80
 # 上下文路径。默认根目录。
 #server.servlet.context-path: /
 # Session timeout. If a duration suffix is not specified, seconds will be used. Default Value: 30m
